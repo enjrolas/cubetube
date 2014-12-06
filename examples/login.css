@@ -2,6 +2,7 @@ div#status{
 	width: 100%;
 	margin:auto;
 	margin-bottom: 20px;
+	color: green;
 }
 
 div#forms{
@@ -16,11 +17,13 @@ div#login{
 	float:left;
 	width: 30%;
 	overflow:hidden;
+	padding: 20px;
 }
 
 div#create-user{
 	float: left;	
 	width: 30%;	
+	padding: 20px;
 }
 
 div#create-user-error{
