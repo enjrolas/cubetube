@@ -1,0 +1,52 @@
+div#status{
+	width: 100%;
+	margin:auto;
+	margin-bottom: 20px;
+}
+
+div#forms{
+	width: 80%;
+	margin: auto;
+	height: 100px;
+	padding: 10px;
+	word-wrap:break-word;
+}
+
+div#login{
+	float:left;
+	width: 30%;
+	overflow:hidden;
+}
+
+div#create-user{
+	float: left;	
+	width: 30%;	
+}
+
+div#create-user-error{
+	color:red;
+}
+
+div#create-user-result{
+	color:blue;
+}
+
+div#login-error{
+	color:red;
+}
+
+div#login-result{
+	color:blue;
+}
+
+div#logout{
+	float:left;
+	width: 100%;
+	margin-top: 40px;
+	margin-left: 15%;
+}
+
+input{
+	display:block;
+	margin:10px;
+}
