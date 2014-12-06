@@ -1,7 +1,11 @@
-var accessToken, username;
+var accessToken, username;  //global vars holding the user's accesstoken and email
 
+//upon page load
 $(function(){
+        //check to see if we have a set cookie, to see if we're logged in
 	checkCookie();
+
+        //register functions for the three buttons on the page
 	$("#login-form-button").click(function(e){ 
 		e.preventDefault();  //prevent the page from reloading
 		login( $("#login-form-email").val(), $("#login-form-password").val());
@@ -19,6 +23,9 @@ $(function(){
     });
 
 
+//login attempts to log into spark's server with the email/password combination
+//retrieves the account's access token, and sets site-wide cookies with the user's
+//email and access token.
 function login( email, password)
 {
     var loginPromise = window.spark.login({ username: email, password: password });
@@ -31,7 +38,6 @@ function login( email, password)
 	  $.cookie("accessToken", data.access_token, { expires: data.expires_in/86400 , path: '/'});
 	  $.cookie("username", email, { expires: data.expires_in/86400 , path: '/'});
 	  updateStatus("logged in as "+email);
-	  listCubes();
       },
       function(error) {
         if (error.message === 'invalid_client') {
@@ -46,6 +52,8 @@ function login( email, password)
     );
 }
 
+//this function attempts to create a user at the given email/pass combination
+//and if there's no glaring error, logs in with the email/pass combination
 function createUser(email, password)
 {
     window.spark.createUser(email, password, function(err, data) {
@@ -64,25 +72,17 @@ function createUser(email, password)
 
 }
 
+//removes both cookies
 function logout()
 {
     $.removeCookie("accessToken", { path: '/' });
     $.removeCookie("username", { path: '/' });
+    accessToken="";
+    username="";
     updateStatus("logged out");
 }
 
-function listCubes()
-{
-    var devicesPr = window.spark.listDevices();
-    devicesPr.then(
-		   function(devices){
-		       console.log('Devices: ', devices);
-		   },
-		   function(err) {
-		       console.log('List devices call failed: ', err);
-		   });
-}
-
+//looks to see
 function checkCookie()
 {
     accessToken=$.cookie("accessToken");
@@ -92,6 +92,9 @@ function checkCookie()
     else
 	updateStatus("you are not logged in");
 }
+
+
+//these functions just streamline updating the content of different divs on the page
 
 function updateStatus(message) {
     $('#status').text(message);
