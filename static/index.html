@@ -5,7 +5,10 @@
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="http://cdn.jsdelivr.net/sparkjs/0.2.3/spark.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
@@ -33,17 +36,16 @@
 			<a href="#login" class="active">LOG IN</a> / <a href="#signup">SIGN UP</a>
 		</div>
 		<div class="tabWrapper active" id="login">
-			<div class="input"><span>Name</span><input type="text" placeholder="username"></div><!-- 
+			<div class="input"><span>Email</span><input id="login-form-email" type="text" placeholder="your email address"></div><!-- 
 			<div class="input"><span>Email</span><input type="text"></div> -->
-			<div class="input"><span>Password</span><input type="password" placeholder="******"></div>
-			<div class="button">LOGIN</div>
+			<div class="input"><span>Password</span><input id="login-form-password" type="password" placeholder="******"></div>
+			<div class="button" id="login-form-button">LOGIN</div>
 		</div>
 		<div class="tabWrapper" id="signup">
-			<div class="input"><span>Name</span><input type="text" placeholder="username"></div><!-- 
-			<div class="input"><span>Email</span><input type="text"></div> -->
-			<div class="input"><span>Password</span><input type="password" placeholder="******"></div>
-			<div class="input"><span>Again</span><input type="password" placeholder="******"></div>
-			<div class="button">CREATE ACCOUNT</div>
+			<div class="input"><span>Email</span><input id="create-user-email" type="text" placeholder="your email address"></div>
+			<div class="input"><span>Password</span><input id="create-user-password" type="password" placeholder="******"></div><!-- 
+			<div class="input"><span>Again</span><input type="password" placeholder="******"></div> -->
+			<div class="button" id="create-user-button">CREATE ACCOUNT</div>
 		</div>
 	</div>
 
