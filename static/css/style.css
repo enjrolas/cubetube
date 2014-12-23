@@ -166,6 +166,15 @@ header {
     background-image: -moz-linear-gradient(-89deg, transparent 33%, rgba(0, 0, 0, 0.5) 81%);
     background-image: -ms-linear-gradient(-89deg, transparent 33%, rgba(0, 0, 0, 0.5) 81%);
     background-image: linear-gradient(-179deg, transparent 33%, rgba(0, 0, 0, 0.5) 81%); }
+  header a.logo img {
+    float: left; }
+  header a.logo span {
+    float: left;
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+    line-height: 110px;
+    padding-left: 20px; }
   header div.loginBtn {
     position: absolute;
     right: 0px;
