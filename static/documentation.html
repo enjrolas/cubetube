@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cube tube</title>
+
+    <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/EB+Garamond:400,400i/Fira+Sans:300,400,500,700">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script src="http://cdn.jsdelivr.net/sparkjs/0.2.3/spark.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="#" class="logo">
+                <img src="i/logo.svg" alt="">
+                <span>CubeTube</span>
+            </a>
+            <div class="loginBtn">
+                <a href="index.html">LOG IN</a> / <a href="index.html">SIGN UP</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul class="wrapper">
+                <li><a href="create.html">CREATE</a>
+                </li>
+                <li><a href="#">DOCUMENTATION</a>
+                </li>
+                <li class="active"><a href="#">GALLERY</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="documentation" class="documentation">
+
+            <div class="table-of-contents">
+                <div class="section-wrapper">
+                    <div class="section-header">Section headers</div>
+                    <a href="#" class="step-header">steps are underlined</a>
+                    <a href="#" class="step-header">The next step</a>
+                    <a href="#" class="step-header">Markup</a>
+                </div>
+
+                <div class="section-wrapper">
+                    <div class="section-header">Another section header</div>
+                    <a href="#" class="step-header">step 1</a>
+                    <a href="#" class="step-header">Step 2</a>
+                    <a href="#" class="step-header">Step 3</a>
+                </div>
+
+                <div class="section-wrapper">
+                    <div class="section-header">A final section header</div>
+                    <a href="#" class="step-header">step 1</a>
+                    <a href="#" class="step-header">Step 2</a>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="section">
+                    <div class="section-title">GETTING STARTED</div>
+                    <div class="step">
+                        <div class="step-title">steps are underlined</div>
+                        <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419250687741_Screenshot%202014-12-21%2016.10.16.png' />
+                        </div>
+                        <div class="step-text">
+                            Every step can have one image associated with it.&nbsp; After the image, you can put as much text as you like
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">The next step</div>
+                        <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419251948662_Untitled-6-01.png' />
+                        </div>
+                        <div class="step-text">
+                            obviously this hackpad is very important
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">Markup</div>
+                        <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419252032548_Screenshot 2014-12-15 13.24.35.png' />
+                        </div>
+                        <div class="step-text">
+                            <p>All the other markup is fair game</p>
+                            <p>
+                                <b>Bold, </b>
+                                <i>italics</i>,&nbsp;
+                            </p>
+                            <ul>
+                                <li>lists</li>
+                                <li>and more lists</li>
+                                <li>and more lists</li>
+                            </ul>
+                            <p>are all fine</p>
+                            <ul class="code">
+                                <li>if you want to include code, that&rsquo;s cool too</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+	            <div class="section">
+	                <div class="section-title">Another section header</div>
+	                <div class="step">
+	                    <div class="step-title">step 1</div>
+	                    <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419387035854_Screenshot 2014-12-20 19.29.17.png' />
+	                    </div>
+	                    <div class="step-text">
+	                        <p>This is step 1.&nbsp; Here is how it goes</p>
+	                    </div>
+	                </div>
+	                <div class="step">
+	                    <div class="step-title">Step 2</div>
+	                    <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419387055357_Screenshot 2014-12-18 22.03.49.png' />
+	                    </div>
+	                    <div class="step-text">
+	                        <p>this is step 2.&nbsp; It goes like this</p>
+	                    </div>
+	                </div>
+	                <div class="step">
+	                    <div class="step-title">Step 3</div>
+	                    <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419387075707_Screenshot 2014-11-03 17.00.00.png' />
+	                    </div>
+	                    <div class="step-text">
+	                        <p>step 3 is like this</p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="section">
+	                <div class="section-title">A final section header</div>
+	                <div class="step">
+	                    <div class="step-title">Step 1</div>
+	                    <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419387222050_Screenshot 2014-11-13 01.25.15.png' />
+	                    </div>
+	                </div>
+	                <div class="step">
+	                    <div class="step-title">Step 2</div>
+	                    <div class="step-image"><img src='https://hackpad-attachments.s3.amazonaws.com/hackpad.com_Sg7Iq7GM9Ju_p.242584_1419387209097_Screenshot 2014-12-15 13.24.35.png' />
+	                    </div>
+	                    <div class="step-text">
+	                        <p>step 2 text</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -51,22 +51,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "kern=1";
+  -moz-font-feature-settings: "kern" on;
+  -webkit-font-feature-settings: "kern";
+  -ms-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  /* 
   -moz-font-feature-settings: "kern=1", "liga=1", "dlig=1", "hlig=1";
   -moz-font-feature-settings: "kern" on, "liga" on, "dlig" on, "hlig" on;
   -webkit-font-feature-settings: "kern","liga","dlig","hlig";
   -ms-font-feature-settings: "kern","liga","dlig","hlig";
-  font-feature-settings: "kern","liga","dlig","hlig"; }
+  font-feature-settings: "kern","liga","dlig","hlig"; */ }
 
 input, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "kern=1";
+  -moz-font-feature-settings: "kern" on;
+  -webkit-font-feature-settings: "kern";
+  -ms-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  /* 
   -moz-font-feature-settings: "kern=1", "liga=1", "dlig=1", "hlig=1";
   -moz-font-feature-settings: "kern" on, "liga" on, "dlig" on, "hlig" on;
   -webkit-font-feature-settings: "kern","liga","dlig","hlig";
   -ms-font-feature-settings: "kern","liga","dlig","hlig";
-  font-feature-settings: "kern","liga","dlig","hlig"; }
+  font-feature-settings: "kern","liga","dlig","hlig"; */ }
 
 a {
   text-decoration: none; }
@@ -248,6 +260,81 @@ header {
           color: #FFFFFF;
           line-height: 28px; }
 
+main .documentation {
+  width: 1280px;
+  margin: 60px auto; }
+  main .documentation .table-of-contents {
+    border: solid 1px #999999;
+    padding: 15px 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A2D34;
+    width: 330px;
+    box-sizing: border-box; }
+    main .documentation .table-of-contents .section-header {
+      font-weight: 500; }
+    main .documentation .table-of-contents .step-header {
+      font-weight: 300;
+      display: block;
+      color: #2A2D34;
+      -webkit-transition: .5s;
+      transition: .5s;
+      margin-left: 10px; }
+      main .documentation .table-of-contents .step-header:hover {
+        color: #00E896; }
+  main .documentation .contents {
+    margin-top: 50px;
+    float: left;
+    width: 100%; }
+    main .documentation .contents .section {
+      margin-bottom: 60px;
+      float: left;
+      width: 100%; }
+    main .documentation .contents .section-title {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      color: #2A2D34;
+      line-height: 52px;
+      padding: 10px 0; }
+    main .documentation .contents .step {
+      float: left;
+      width: 100%;
+      margin-bottom: 60px; }
+      main .documentation .contents .step .step-title {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: rgba(42, 44, 52, 0.6);
+        padding: 5px 0;
+        border-bottom: solid 1px #999999;
+        margin-bottom: 20px; }
+      main .documentation .contents .step .step-image {
+        width: 520px;
+        float: right; }
+        main .documentation .contents .step .step-image img {
+          max-width: 100%; }
+      main .documentation .contents .step .step-text {
+        font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 20px;
+        width: 740px; }
+        main .documentation .contents .step .step-text p {
+          margin-bottom: 20px; }
+          main .documentation .contents .step .step-text p i {
+            font-style: italic; }
+        main .documentation .contents .step .step-text ul {
+          font-size: 24px;
+          line-height: 36px;
+          padding-bottom: 20px;
+          padding-left: 20px;
+          margin-top: -20px; }
+          main .documentation .contents .step .step-text ul li {
+            list-style: disc; }
 main .detail {
   width: 1280px;
   margin: 60px auto; }
